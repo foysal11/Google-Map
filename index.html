@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="map"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcFWRXxx-r-FKDO587EmqLQw6kq2pTXCE&callback=initMap"></script>
+  <script src="script.js"></script>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h2>Current Location</h2>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body"></div>
+          <label for="Latitude and Longitude">Latitude and Longitude:</label>
+          <input type="text" id="lat_long" name="lat_long"><br><br>
+          <label for="Name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          <input type="button" id="send" value="Send to console">
+        </div>
+      </div>
+
+    </div>
+
+</body>
+
+</html>
